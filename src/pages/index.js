@@ -1,10 +1,9 @@
-import Reloj from "@/components/estados/Reloj";
-
+import ContadorReducer from "@/components/estados/ContadorReducer";
 
 export default function Home() {
   return (
     <>
-      <Reloj />
+      <ContadorReducer />
     </>
   );
 }
