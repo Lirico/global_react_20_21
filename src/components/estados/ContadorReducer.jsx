@@ -6,13 +6,13 @@ import { reducer } from "@/reducer/reducer";
 
 
 const ContadorReducer = () => {
-    const {INCREMENTAR, DECREMENTAR, RESETEAR, ALTERNAR_VISIBILIDAD} = TYPES;
+    const { INCREMENTAR, DECREMENTAR, RESETEAR, ALTERNAR_VISIBILIDAD } = TYPES;
 
     const [state, dispatch] = useReducer(reducer, initialState)
 
-    const incrementar = () => dispatch({ type: INCREMENTAR })
+    const incrementar = () => dispatch({ type: INCREMENTAR, payload: 10 })
     const resetear = () => dispatch({ type: RESETEAR })
-    const decrementar = () => dispatch({ type: DECREMENTAR })
+    const decrementar = () => dispatch({ type: DECREMENTAR, payload: 10 })
     const alternarVisibilidad = () => dispatch({ type: ALTERNAR_VISIBILIDAD })
 
     return (

@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+}
+
+header {
+    height: 10vh;
+}
+
+footer,
+main {
+    height: 100vh;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    font-size: 1.25rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}

@@ -8,13 +8,13 @@ export const reducer = (state, action) => {
         case TYPES.INCREMENTAR: {
             return {
                 ...state,
-                contador: state.contador + 1
+                contador: state.contador + action.payload
             }
         }
         case TYPES.DECREMENTAR: {
             return {
                 ...state,
-                contador: state.contador - 1
+                contador: state.contador - action.payload
             }
         }
         case TYPES.RESETEAR: {
