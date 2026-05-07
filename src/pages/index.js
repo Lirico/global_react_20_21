@@ -1,19 +1,12 @@
-import Footer from "@/components/dark_light_components/Footer";
-import Header from "@/components/dark_light_components/Header";
-import Main from "@/components/dark_light_components/Main";
-import LanguageContextProvider from "@/context/LanguageContextProvider";
-import ThemeContextProvider from "@/context/ThemeContextProvider";
+import Cart from "@/components/cart/Cart";
+import CartContextProvider from "@/context/CartContextProvider";
 
 export default function Home() {
   return (
     <>
-      <LanguageContextProvider>
-        <ThemeContextProvider>
-          <Header />
-          <Main />
-          <Footer />
-        </ThemeContextProvider>
-      </LanguageContextProvider>
+      <CartContextProvider>
+        <Cart />
+      </CartContextProvider>
     </>
   );
 }

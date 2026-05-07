@@ -11,7 +11,7 @@ main {
     height: 100vh;
 }
 
-button {
+/* button {
     border: none;
     background-color: transparent;
     font-size: 1.25rem;
@@ -21,9 +21,34 @@ button {
 
 button:hover {
     transform: translateY(-3px);
-}
+} */
 
 .dark {
     background-color: black;
+    color: white;
+}
+
+/********** SHOPPING CART **************/
+.box {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: aqua;
+}
+
+.grid-responsive {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.product {
+    padding: 1rem;
+    background-color: blueviolet;
+    color: white;
+}
+
+.cart-item {
+    background-color: crimson;
+    padding: 1rem;
     color: white;
 }

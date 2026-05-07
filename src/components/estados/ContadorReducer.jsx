@@ -1,7 +1,7 @@
 import { useReducer } from "react"
-import { TYPES } from "@/reducer/actions";
-import { initialState } from "@/reducer/initialState";
-import { reducer } from "@/reducer/reducer";
+import { TYPES } from "@/reducer_cart/actions";
+import { initialState } from "@/reducer_cart/initialState";
+import { reducer } from "@/reducer_cart/reducer";
 
 
 
