@@ -4,10 +4,11 @@ import { useContext } from 'react';
 
 import React from 'react'
 import Product from './Product';
+import Item from './Item';
 
 const Cart = () => {
 
-    const { products, cart, addToCart } = useContext(CartContext);
+    const { products, cart, addToCart, removeFromCart, clearCart } = useContext(CartContext);
 
     return (
         <>
@@ -20,10 +21,14 @@ const Cart = () => {
             </div>
             <h3>Carrito</h3>
             <div className="box">
+                {
+                    cart.map((item, i) => <Item key={i} item={item} removeFromCart={removeFromCart} />)
+                }
             </div>
-            <button>Limpiar Carrito</button>
+            <button onClick={clearCart}>Limpiar Carrito</button>
         </>
     )
 }
 
 export default Cart
+

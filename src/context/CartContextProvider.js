@@ -13,7 +13,13 @@ const CartContextProvider = ({ children }) => {
     const { products, cart } = state;
 
     const addToCart = (id) => dispatch({ type: TYPES.ADD_TO_CART, payload: id })
-    const removeFromCart = (id) => dispatch({ type: TYPES.REMOVE_ONE_ITEM, payload: id })
+    const removeFromCart = (id, all = false) => {
+        if(all){
+            dispatch({ type: TYPES.REMOVE_ALL_ITEMS, payload: id })
+        } else {
+            dispatch({ type: TYPES.REMOVE_ONE_ITEM, payload: id })
+        }
+    }
     const clearCart = () => dispatch({ type: TYPES.CLEAR_CART })
 
     return (
@@ -24,4 +30,3 @@ const CartContextProvider = ({ children }) => {
 }
 
 export default CartContextProvider
-
