@@ -1,12 +1,9 @@
-import Cart from "@/components/cart/Cart";
-import CartContextProvider from "@/context/CartContextProvider";
+import App from "@/components/users_api/App";
 
 export default function Home() {
   return (
     <>
-      <CartContextProvider>
-        <Cart />
-      </CartContextProvider>
+      <App />
     </>
   );
 }

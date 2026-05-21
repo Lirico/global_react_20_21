@@ -52,3 +52,98 @@ button:hover {
     padding: 1rem;
     color: white;
 }
+
+/* Contenedor principal de la tarjeta */
+.user-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  max-width: 350px;
+  margin: 20px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #f0f0f0;
+}
+
+/* Efecto al pasar el mouse */
+.user-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* USER CARD */
+
+/* Tarjeta contenedora */
+.user {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+  max-width: 320px;
+  margin: 20px auto;
+  font-family: system-ui, -apple-system, sans-serif;
+  border: 1px solid #eaeaea;
+}
+
+/* Estilos para la lista */
+.user ul {
+  list-style: none; /* Quita los puntitos */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Separa los items */
+}
+
+/* Estilos para cada ítem de texto */
+.user li {
+  color: #333333;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+/* Elimina la línea divisoria en el último elemento */
+.user li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+
+/********* LOADER **********/
+
+.lds-circle,
+.lds-circle div {
+  box-sizing: border-box;
+}
+.lds-circle {
+  display: inline-block;
+  transform: translateZ(1px);
+}
+.lds-circle > div {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  background: currentColor;
+  border-radius: 50%;
+  animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+@keyframes lds-circle {
+  0%, 100% {
+    animation-timing-function: cubic-bezier(0.5, 0, 1, 0.5);
+  }
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(1800deg);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1);
+  }
+  100% {
+    transform: rotateY(3600deg);
+  }
+}
+
