@@ -11,6 +11,7 @@ const App = () => {
   // Esta se llama ASYNC/AWAIT
 
   const getData = async () => {
+    // Si usan Json server, lo unico que cambia es el A DONDE!
     const ENDPOINT = "http://localhost:5000/users";
 
     try {

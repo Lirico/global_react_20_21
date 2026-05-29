@@ -230,5 +230,14 @@
         "bs": "target end-to-end models"
       }
     }
+  ],
+  "admins": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "username": "admin",
+      "email": "admin@example.com",
+      "password": "admin"
+    }
   ]
 }
